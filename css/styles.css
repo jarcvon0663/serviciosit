@@ -510,7 +510,7 @@ body{
 }
 
 .socialmedia__icon{
-    font-size: 18px;
+    font-size: 24px;
     margin-right: 30px;
     display: inline-block;
 }
@@ -542,7 +542,7 @@ body{
 }
 
 .contact__icon{
-    font-size: 14px;
+    font-size: 28px;
     color: var(--gold1);
     line-height: 20px;
     margin-right: 4px;
