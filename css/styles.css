@@ -93,6 +93,11 @@ body{
     width: 48%;
 }
 
+.hero__textosp{
+    width: 100%;
+    text-align: center;
+}
+
 .title{
     font-size: 56px;
     font-weight: 300;
