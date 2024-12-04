@@ -133,6 +133,11 @@ body{
 
 /* services */
 
+.enlace {
+    text-decoration: none;
+    color: #fff;
+}
+
 .services{
     background: #fafafa;
 }
