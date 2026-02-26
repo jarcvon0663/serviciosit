@@ -7,7 +7,7 @@
 (function () {
   // ✅ La API key vive en Cloudflare — no se expone en el frontend
   const ENDPOINT = "https://cerebras-proxy.jarcvon.workers.dev";
-  const MODEL    = "llama-31-8b";
+  const MODEL    = "llama3.1-8b";
 
   const SYSTEM_PROMPT = `Eres el asistente virtual de Servicios IT, empresa tecnológica ubicada en Bogotá, Colombia.
 Tu nombre es "SIT Assistant". Eres amable, profesional y conciso.
