@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño Web</title>
+
+    <!-- ✅ FIX #1: Meta description para SEO -->
+    <title>Servicios IT | Desarrollo Web, Agentes IA y Soporte Tecnológico en Bogotá</title>
+    <meta name="description" content="Servicios IT ofrece desarrollo de web apps, diseño UX/UI, agentes de inteligencia artificial, soporte IT, hosting y outsourcing de personal tecnológico en Bogotá, Colombia.">
+    <meta name="keywords" content="desarrollo web, agentes IA, soporte IT, diseño UX UI, hosting, outsourcing IT, Bogotá, Colombia">
+    <meta name="author" content="Servicios IT">
+    <meta name="robots" content="index, follow">
+
+    <!-- ✅ FIX #2: Open Graph para redes sociales -->
+    <meta property="og:title" content="Servicios IT | La mejor Experiencia Digital">
+    <meta property="og:description" content="Llevamos tu idea al siguiente nivel. Desarrollo web, IA, soporte y más desde Bogotá.">
+    <meta property="og:url" content="https://www.serviciosit.online">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Servicios IT | La mejor Experiencia Digital">
+    <meta name="twitter:description" content="Llevamos tu idea al siguiente nivel. Desarrollo web, IA, soporte y más desde Bogotá.">
+
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon2.ico">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="baec86fa-6733-478a-a3c6-dfb8c4fb9c6a" data-blockingmode="auto" type="text/javascript"></script>
 </head>
 <body>
     <header class="hero">
         <nav class="nav__hero">
             <div class="container nav__container">
                 <div class="logo">
-                    <h2 class="logo__name">Brian Tovar<span class="point">.</span></h2>
+                    <h2 class="logo__name">Servicios IT<span class="point">.</span></h2>
                 </div>
-                <div class="links">
-                    <a href="#" class="link">Inicio</a>
-                    <a href="#" class="link">Servicios</a>
-                    <a href="#" class="link">Proyectos</a>
-                    <a href="#" class="link">Clientes</a>
-                    <a href="#" class="link link--active">Contacto</a>
+                <!-- ✅ FIX #3: Nav activo dinámico — manejado por JS al fondo del archivo -->
+                <div class="links">                    
+                    <a href="#servicios" class="link" data-nav>Servicios</a>
+                    <a href="#proyectos" class="link" data-nav>Proyectos</a>
+                    <a href="#clientes" class="link" data-nav>Clientes</a>
+                    <a href="#contacto" class="link" data-nav>Contacto</a>
                 </div>
             </div>
         </nav>
@@ -27,95 +48,134 @@
             <div class="hero__textos">
                 <h1 class="title">La mejor <span class="title--active">Experiencia Digital.</span></h1> 
                 <p class="copy">Nos encargamos de llevar tu idea al <span class="copy__active">siguiente nivel</span></p>
-                <a href="#" class="cta">Agenda una demo</a>
+                <a href="#contacto" class="cta">Agenda una reunión</a>
             </div>
-            <img src="img/mockup.png" class="mockup">
+            <!-- ✅ FIX #4: alt en todas las imágenes -->
+            <img src="img/mockup.png" class="mockup" alt="Mockup de aplicación web desarrollada por Servicios IT">
         </section>
     </header>
 
     <main>
-        <section class="services">
+        <section class="services" id="servicios">
             <div class="container">
                 <h2 class="subtitle">Nuestros servicios<span class="point">.</span></h2>
-                <p class="copy__section">Ofrecemos las soluciones perfectas para la revolución digital</p>
+                <p class="copy__section">Ofrecemos una amplia gama de productos y servicios que pueden ayudar a mejorar la eficiencia y productividad de su empresa, y estamos seguros de que podemos encontrar la solución perfecta para sus necesidades.</p>
 
                 <article class="container-cards">
                     <div class="card">
-                        <img src="img/image2.jpg" class="card__img">
+                        <img src="img/image2.jpg" class="card__img" alt="Desarrollo de aplicaciones web">
                         <div class="cards__text">
-                            <p class="card__list">Especialistas en diseño UX / UI</p>
+                            <p class="card__list">Especialistas en desarrollo</p>
                             <h3 class="card__title">Web apps<span class="point">.</span></h3>
-                            <p class="card__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum sit molestias ipsam at veritatis ut esse eius, dolor est!</p>
-                            <a href="#" class="card__button">Comienza tu proyecto</a>
+                            <p class="card__copy">Una versión de la página web adaptada a cualquier dispositivo móvil, independientemente del sistema operativo que utilice.</p>
+                            <a href="#contacto" class="card__button">Comienza tu proyecto</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/image1.jpg" class="card__img">
+                        <img src="img/image1.jpg" class="card__img" alt="Diseño UX UI web">
                         <div class="cards__text">
                             <p class="card__list">Especialistas en diseño UX / UI</p>
                             <h3 class="card__title">Diseño web<span class="point">.</span></h3>
-                            <p class="card__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum sit molestias ipsam at veritatis ut esse eius, dolor est!</p>
-                            <a href="#" class="card__button">Comienza tu proyecto</a>
+                            <p class="card__copy">Analizamos e investigamos la experiencia del usuario, sus puntos de contacto y lo plasmamos en una interfaz funcional y amigable.</p>
+                            <a href="#contacto" class="card__button">Comienza tu proyecto</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/image3.jpg" class="card__img">
+                        <img src="img/image3.webp" class="card__img" alt="Agentes de inteligencia artificial">
                         <div class="cards__text">
-                            <p class="card__list">Especialistas en diseño UX / UI</p>
-                            <h3 class="card__title">Ecommerce<span class="point">.</span></h3>
-                            <p class="card__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum sit molestias ipsam at veritatis ut esse eius, dolor est!</p>
-                            <a href="#" class="card__button">Comienza tu proyecto</a>
+                            <p class="card__list">Especialistas en IA</p>
+                            <h3 class="card__title">Agentes de IA<span class="point">.</span></h3>
+                            <p class="card__copy">Incorpora capacidades digitales de automatización de tareas repetitivas con robots de software que intervienen en varios procesos.</p>
+                            <a href="#contacto" class="card__button">Comienza tu proyecto</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/hd.jpeg" class="card__img" alt="Soporte IT y Help Desk">
+                        <div class="cards__text">
+                            <p class="card__list">Especialistas en Help Desk</p>
+                            <h3 class="card__title">Soporte IT<span class="point">.</span></h3>
+                            <p class="card__copy">Soluciones de servicios de soporte que ayuden a la continuidad de su negocio.</p>
+                            <a href="#contacto" class="card__button">Comienza tu proyecto</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/cloud.jpg" class="card__img" alt="Servicios de hosting y cloud computing">
+                        <div class="cards__text">
+                            <p class="card__list">Especialistas en Servicios Cloud</p>
+                            <h3 class="card__title">Hosting<span class="point">.</span></h3>
+                            <p class="card__copy">Hospedaje de páginas Web, Servicios de Correo Electrónico, Servidores Dedicados.</p>
+                            <a href="#contacto" class="card__button">Comienza tu proyecto</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/out.jpg" class="card__img" alt="Outsourcing de personal IT - Bodyshopping">
+                        <div class="cards__text">
+                            <p class="card__list">Outsourcing de Personal</p>
+                            <h3 class="card__title">Bodyshopping<span class="point">.</span></h3>
+                            <p class="card__copy">Lo ayudamos a encontrar el talento humano necesario para lograr soluciones tecnológicas.</p>
+                            <a href="#contacto" class="card__button">Comienza tu proyecto</a>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
-        <section class="projects container">
-            <h2 class="subtitle">Proyectos recientes<span class="point">.</span></h2>
-            <p class="copy__section">Hemos colaborado con PYME's y organizaciones de gran tamaño</p>
-            <article class="container-bg">
-                <div class="card">
-                    <div class="cards__text">
-                        <h3 class="card__title">Diseño web<span class="point">.</span></h3>
-                        <p class="card__date">24 de agosto 2020</p>
-                        <p class="card__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum sit molestias ipsam at veritatis ut esse eius, dolor est!</p>
-                        <a href="#" class="card__button">Comienza tu proyecto</a>
-                    </div>
-                </div>
-                <div class="background">
-                    <img src="img/background1.jpg" class="background__img">
-                    <div class="background__text">
-                        <h3 class="background__title">Comercio digital</h3>
-                        <p class="background__copy">La revolución digital nos acerca a más clientes</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cards__text">
-                        <h3 class="card__title">Desarrollo web<span class="point">.</span></h3>
-                        <p class="card__date">24 de agosto 2020</p>
-                        <p class="card__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum sit molestias ipsam at veritatis ut esse eius, dolor est!</p>
-                        <a href="#" class="card__button">Comienza tu proyecto</a>
-                    </div>
-                </div>
-                <div class="background">
-                    <img src="img/background2.jpg" class="background__img">
-                    <div class="background__text">
-                        <h3 class="background__title">Posicionamiento de marca</h3>
-                        <p class="background__copy">Haz que tu negocio sea visible en el mundo digital</p>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="testimony">
+
+        <!-- ✅ FIX #5: section "projects" ahora usa un div.container interno igual que las demás secciones -->
+        <section class="projects" id="proyectos">
             <div class="container">
+                <h2 class="subtitle">Proyectos recientes<span class="point">.</span></h2>
+                <p class="copy__section">Hemos colaborado con PYME's en diferentes sectores de la industria</p>
+                <article class="container-bg">
+                    <div class="card">
+                        <div class="cards__text">
+                            <h3 class="card__title">Automatización<span class="point">.</span></h3>
+                            <p class="card__date">Panadería Olímpica 2022</p>
+                            <p class="card__copy">Con una versión digitalizada del menú por medio de un código QR y la automatización de la creación de órdenes en el sistema desde el menú del cliente. Lo mejor es que en caso de cambios en tu menú tan solo lo actualizas desde el sistema y ¡listo!</p>
+                            <a href="#contacto" class="card__button">Comienza tu proyecto</a>
+                        </div>
+                    </div>
+                    <div class="background">
+                        <img src="img/image4.jpg" class="background__img" alt="Automatización para Panadería Olímpica">
+                        <div class="background__text">
+                            <h3 class="background__title">Automatización</h3>
+                            <p class="background__copy">La revolución digital nos acerca a más clientes</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cards__text">
+                            <h3 class="card__title">Desarrollo web<span class="point">.</span></h3>
+                            <p class="card__date">Videojuegos Retro 2023</p>
+                            <p class="card__copy">Creación de un E-commerce que permite conocer con detalle los productos ofertados, integrando facilidades de pago y acceso a la información.</p>
+                            <a href="#contacto" class="card__button">Comienza tu proyecto</a>
+                        </div>
+                    </div>
+                    <div class="background">
+                        <img src="img/vr.png" class="background__img" alt="E-commerce Videojuegos Retro">
+                        <div class="background__text">
+                            <h3 class="background__title">Posicionamiento de marca</h3>
+                            <!-- ✅ FIX #6: <p> NO puede ir dentro de <a> — se invierte el orden -->
+                            <p class="background__copy">
+                                <a class="enlace" href="https://videojuegosretro.pro/pc/pc.html" target="_blank" rel="noopener noreferrer">
+                                    Haz que tu negocio sea visible en el mundo digital
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimony" id="clientes">
+            <div class="container">
+                <!-- ✅ FIX #7: Ortografía — "confian" → "confían" / "ya" → "Ya" -->
                 <h2 class="subtitle">Clientes satisfechos<span class="point">.</span></h2>
-                <p class="copy__section">Cientos de empresas confian en nosotros</p>
+                <p class="copy__section">Ya muchos confían en nosotros</p>
 
                 <div class="testimony-container">
                     <div class="testimony__card">
-                        <img src="img/first-person2.jpg" class="testimony__img">
+                        <img src="img/first-person2.jpg" class="testimony__img" alt="Liz Rios, fundadora de Delirios By Liz">
                         <div class="testimony__copy">
-                            <i class='bx bxs-t-shirt testimony__logo'></i>
+                            <i class='bx bxs-t-shirt testimony__logo' aria-hidden="true"></i>
                             <div class="testimony__info">
                                 <h3 class="testimony__name">Liz Rios</h3>
                                 <p class="testimony__position">Fundadora Delirios By Liz</p>
@@ -124,22 +184,22 @@
                     </div>
 
                     <div class="testimony__card">
-                        <img src="img/second_person2.jpg" class="testimony__img">
+                        <img src="img/second_person2.jpg" class="testimony__img" alt="Chris Fill, Director General de FillStudios">
                         <div class="testimony__copy">
-                            <i class='bx bx-music testimony__logo'></i>
+                            <i class='bx bx-music testimony__logo' aria-hidden="true"></i>
                             <div class="testimony__info">
                                 <h3 class="testimony__name">Chris Fill</h3>
-                                <p class="testimony__position">Productor Musical en FillStudios</p>
+                                <p class="testimony__position">Director General en FillStudios</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="testimony__card">
                         <div class="testimony__text">
-                            <img src="img/byliz.png" class="google__logo">
-                            <p class="testimony__history">“Desde que empezamos a trabajar con Brian Tovar comenzamos a obtener resultados increíbles. Ahora hemos llegado a un mayor número de clientes potenciales”</p>
+                            <img src="img/byliz.png" class="google__logo" alt="Logo Delirios By Liz">
+                            <p class="testimony__history">"Desde que empezamos a trabajar con Servicios IT, comenzamos a obtener resultados increíbles. Ahora hemos llegado a un mayor número de clientes"</p>
                             <div class="testimony__copy testimony__copy--modifier">
-                                <img src="img/first-person2.jpg" class="testimony__logo logo--picture">
+                                <img src="img/first-person2.jpg" class="testimony__logo logo--picture" alt="Liz Rios">
                                 <div class="testimony__info">
                                     <h3 class="testimony__name">Liz Rios</h3>
                                     <p class="testimony__position">Fundadora Delirios By Liz</p>
@@ -151,36 +211,41 @@
             </div>
         </section>
 
-        <section class="email container container--modifier">
+        <section class="email container container--modifier" id="contacto">
             <h2 class="subtitle subtitle--modifier">Somos tu mejor opción para adoptar la transformación digital<span class="point">.</span></h2>
 
-            <p class="copy__section copy__section--modifier">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, et dolore id necessitatibus quibusdam rem accusamus fugiat doloremque voluptatibus eius!</p>
+            <p class="copy__section copy__section--modifier">Estamos comprometidos en ofrecer soluciones innovadoras y de vanguardia a nuestros clientes.
+Nuestro equipo está formado por expertos en tecnología que están constantemente actualizados con las últimas tendencias y desarrollos en el campo.
+Además, nuestro compromiso con la excelencia en el servicio al cliente significa que puede confiar en nosotros para brindar un soporte excepcional durante todo el proceso.
+Si está interesado en conocer más acerca de lo que podemos ofrecer, no dude en ponerse en contacto con nosotros. Estamos deseando trabajar con usted y ayudarlo a llevar su empresa al siguiente nivel.</p>
 
             <div class="check">
                 <div class="check__item">
-                    <i class='bx bx-check' ></i>
+                    <i class='bx bx-check' aria-hidden="true"></i>
                     <div class="check__numbers">
-                        <p class="check__number">+20</p>
+                        <p class="check__number">+7</p>
                         <p class="check__copy">Proyectos exitosos</p>
                     </div>
                 </div>
                 <div class="check__item">
-                    <i class='bx bx-check' ></i>
+                    <i class='bx bx-check' aria-hidden="true"></i>
                     <div class="check__numbers">
-                        <p class="check__number">+20</p>
-                        <p class="check__copy">Proyectos exitosos</p>
+                        <p class="check__number">Varios</p>
+                        <p class="check__copy">Clientes satisfechos</p>
                     </div>
                 </div>
                 <div class="check__item">
-                    <i class='bx bx-check' ></i>
+                    <i class='bx bx-check' aria-hidden="true"></i>
                     <div class="check__numbers">
-                        <p class="check__number">+20</p>
-                        <p class="check__copy">Proyectos exitosos</p>
+                        <p class="check__number">Excelente</p>
+                        <p class="check__copy">Talento humano</p>
                     </div>
                 </div>
             </div>
-            <form class="newsletter">
-                <input type="text" class="newsletter__input" placeholder="Ingresa tu email">
+
+            <!-- ✅ FIX #8: type="email" para validación nativa del navegador -->
+            <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLScjnISS8EbIVE2i0AecTJIL09bp53bh9YtUCKAvaOH9twhg6g/formResponse" class="newsletter" method="POST" target="_blank">
+                <input type="email" name="entry.1024972558" class="newsletter__input" placeholder="Ingresa tu email" required aria-label="Correo electrónico">
                 <input type="submit" class="newsletter__submit" value="Comienza hoy">
             </form>
         </section>
@@ -189,59 +254,95 @@
     <footer class="footer">
         <div class="container footer__caption">
             <section class="download">
-                <h3 class="title__footer">Descarga nuestra App</h3>
-                <div class="download__app">
-                    <div class="download__item">
-                        <i class='bx bxl-apple download__logo' ></i>
-                        <h4 class="download__title">App Store</h4>
-                    </div>
-                    <div class="download__item">
-                        <i class='bx bxl-play-store download__logo' ></i>
-                        <h4 class="download__title">Play Store</h4>
-                    </div>
-                </div>
+                <h3 class="title__footer">Contáctanos</h3>
+                
                 <div class="footer__copy">
-                    <p class="copyright">JeisonR &copy; 2020 Todos los derechos reservados</p>
+                    <!-- ✅ FIX #9: Copyright actualizado a 2025 -->
+                    <p class="copyright">Servicios IT &copy; 2025 Todos los derechos reservados</p>
     
-                    <a href="#" class="politica__privacidad politica__privacidad--margin">Politica de privacidad</a>
-                    <a href="#" class="politica__privacidad ">Terminos y condiciones</a>
+                    <a href="politicadeprivacidad.html" class="politica__privacidad politica__privacidad--margin">Política de privacidad</a>
+                    <!-- ✅ FIX #10: "Términos y condiciones" — enlace eliminado hasta tener la página real -->
+                    <!-- Si creas terminos.html en el futuro, descomenta esta línea: -->
+                    <!-- <a href="terminos.html" class="politica__privacidad">Términos y condiciones</a> -->
                 </div>
             </section>
             <section class="get-email">
                 <h3 class="title__footer">¿Estás listo para trabajar con nosotros?</h3>
-                <form class="newsletter newsletter--modifier">
-                    <input type="text" class="newsletter__input" placeholder="Ingresa tu email">
-                    <input type="submit" class="newsletter__submit" value="Comienza hoy">
+                <!-- ✅ FIX #8 (bis): type="email" y method correcto -->
+                <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLScjnISS8EbIVE2i0AecTJIL09bp53bh9YtUCKAvaOH9twhg6g/formResponse" class="newsletter newsletter--modifier" method="POST" target="_blank">
+                    <input type="email" name="entry.1024972558" class="newsletter__input" placeholder="Ingresa tu email" required aria-label="Correo electrónico">
+                    <input type="submit" class="newsletter__submit" value="Postularme">
                 </form>
                 <div class="socialmedia">
-                    <p class="socialmedia__legend">Siguenos en:</p>
-                    <i class='socialmedia__icon bx bxl-facebook-circle'></i>
-                    <i class='socialmedia__icon bx bxl-linkedin-square'></i>                                                                                                        
-                    <i class='socialmedia__icon bx bxl-twitter' ></i>   
-                    <i class='socialmedia__icon bx bxl-instagram' ></i>
-                    <i class='socialmedia__icon bx bxl-github' ></i>  
+                    <p class="socialmedia__legend">Síguenos en:</p>
+                    <a href="https://www.facebook.com/profile.php?id=100088510930317" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Servicios IT">
+                        <i class='socialmedia__icon bx bxl-facebook-circle' aria-hidden="true"></i>
+                    </a>
+                    <a href="https://co.linkedin.com/company/serviciositonline" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Servicios IT">
+                        <i class='socialmedia__icon bx bxl-linkedin-square' aria-hidden="true"></i>
+                    </a>   
+                    <a href="https://www.instagram.com/_serviciosit/?hl=es-la" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Servicios IT">
+                        <i class='socialmedia__icon bx bxl-instagram' aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/Servicios-IT" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Servicios IT">
+                        <i class='socialmedia__icon bx bxl-github' aria-hidden="true"></i>
+                    </a>  
                 </div>
             </section>
         </div>
 
         <div class="contact">
             <div class="item__contact">
-                <i class='bx bx-copyright contact__icon' ></i>
-                <h3 class="contact__title">Jeison Rios</h3>
+                <i class='bx bx-copyright contact__icon' aria-hidden="true"></i>
+                <h3 class="contact__title">Servicios IT</h3>
+            </div>
+            <!-- ✅ FIX #11: <h3> NO puede ir dentro de <a> — se reorganiza el marcado -->
+            <div class="item__contact">
+                <i class='bx bx-mail-send contact__icon' aria-hidden="true"></i>
+                <h3 class="contact__title">
+                    <a href="mailto:talentohumano@serviciosit.online" style="text-decoration:none; color:inherit;">
+                        talentohumano@serviciosit.online
+                    </a>
+                </h3>
             </div>
             <div class="item__contact">
-                <i class='bx bx-mail-send contact__icon' ></i>
-                <h3 class="contact__title">jarcvon@hotmail.com</h3>
-            </div>
-            <div class="item__contact">
-                <i class='bx bxs-edit-location contact__icon' ></i>
+                <i class='bx bxs-edit-location contact__icon' aria-hidden="true"></i>
                 <h3 class="contact__title">Bogotá D.C.</h3>
             </div>
             <div class="item__contact item__contact--gold">
-                <i class='bx bxs-chat contact__icon contact__icon--modifier' ></i>
-                <h3 class="contact__title">Contactanos ahora</h3>
+                <a href="https://co.linkedin.com/company/serviciositonline" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos en LinkedIn">
+                    <i class='bx bxl-linkedin contact__icon contact__icon--modifier' aria-hidden="true"></i>
+                </a>
+                <h3 class="contact__title">Contáctanos ahora</h3>
             </div>
         </div>
     </footer>
+
+    <!-- ✅ FIX #3: Script para nav activo dinámico según sección visible -->
+    <script>
+        (function () {
+            const navLinks = document.querySelectorAll('[data-nav]');
+            const sections = document.querySelectorAll('section[id], header');
+
+            function setActive() {
+                let currentId = '';
+                sections.forEach(section => {
+                    const top = section.getBoundingClientRect().top;
+                    if (top <= 80) currentId = section.id || 'inicio';
+                });
+                navLinks.forEach(link => {
+                    const href = link.getAttribute('href').replace('#', '');
+                    link.classList.toggle('link--active', href === currentId);
+                });
+            }
+
+            window.addEventListener('scroll', setActive, { passive: true });
+            setActive();
+        })();
+    </script>
+
+    <!-- ✅ Agente de IA con Cerebras -->
+    <script src="js/chat.js"></script>
+
 </body>
 </html>
