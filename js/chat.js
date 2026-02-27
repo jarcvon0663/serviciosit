@@ -70,7 +70,7 @@ INSTRUCCIONES:
 1. Responde siempre en español.
 2. Sé breve: máximo 2-3 oraciones por respuesta, salvo que se pida más detalle.
 3. Cuando des precios, aclara que son estimados de mercado y que el precio final depende de los requerimientos. Invita a agendar una consulta gratuita.
-4. Si el usuario necesita contactar a alguien, proporciona el teléfono 601 227 6691 o invítalo a escribir en el formulario del sitio.
+4. Si el usuario necesita contactar a alguien, proporciona el teléfono 601 227 6691 o invítalo a agendar una reunión de 30 minutos con el botón agendar reunión del sitio.
 5. Si la pregunta no tiene relación con tecnología o la empresa, redirige amablemente.
 6. Nunca inventes datos que no estén en este prompt.`;
 
@@ -211,7 +211,7 @@ INSTRUCCIONES:
 
     @media (max-width:500px) {
       #sit-chat-window { right:12px; bottom:90px; width:calc(100vw - 24px); }
-      #sit-chat-btn    { right:16px; bottom:20px; }
+      #sit-chat-btn    { right:16px; bottom:60px; }
     }
   `;
   document.head.appendChild(style);
