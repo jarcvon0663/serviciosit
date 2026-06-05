@@ -7,7 +7,7 @@
 (function () {
   const API_KEY  = "csk-e9pfrxvrfdyk53h8pf2ynwefn8nfkx3p4d63m45kvtmm523h";
   const ENDPOINT = "https://api.cerebras.ai/v1/chat/completions";
-  const MODEL    = "llama3.1-8b"; // ✅ Modelo correcto de Cerebras
+  const MODEL    = "gpt-oss-120b"; // ✅ Modelo correcto de Cerebras
 
   const SYSTEM_PROMPT = `Eres el asistente virtual de Servicios IT, empresa tecnológica ubicada en Bogotá, Colombia.
 Tu nombre es "SIT Assistant". Eres amable, profesional y conciso.
